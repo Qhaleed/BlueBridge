@@ -1,0 +1,71 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 80vh;
+    padding: 40px;
+  }
+
+  .Container p {
+    margin-right: 20%;
+    color: #e7c665;
+  }
+
+  .donation-page {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .PaymentContainer {
+    width: 35vw; 
+    height: 60vh;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 3%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    background-color: #fff9e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  
+  }
+  
+  .PaymentMode {
+    width: 33.5vw;
+    height: 6vh;
+  }
+  
+  button {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px #e7c665 solid;
+    width: 7.5vw;
+    height: 5vh;
+    margin: 7px;
+    color: #e7c665;
+    background-color: #fff;
+  }
+  
+  button:hover {
+    background-color: #e7c665;
+  }
+  
+  
+  .PaymentInput {  
+    border: 1px #e7c665 solid;
+    width: 16vw;
+    height: 2.5vh;
+    border-radius: 10px;
+  }
+  
+    .PaymentInput:hover {
+      background-color: #e7c665;
+    }
+  
+
+  /*******************************************/ 
