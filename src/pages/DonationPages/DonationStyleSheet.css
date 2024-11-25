@@ -3,19 +3,18 @@ body {
 }
 
 .sections {
-  background-color: antiquewhite;
   justify-content: center;
   align-items: center;
   display: flex;
   padding: 0.5%;
   width: 100%;
-  height: 800px;
+  min-height: 650px;
 }
 
 .content-container  {
   display: flex;
   flex-direction: column;
-  align-items: center;    
+  align-items: flex-start;    
   width: 35%;
   height: 60%;
   padding: 20px;
@@ -23,7 +22,7 @@ body {
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  margin-right: 10px;
+  margin-top: 5%;
 }
 
 .content-container  h3 {
@@ -57,8 +56,9 @@ body {
   align-items: center;
   background-color: #ffffff;
   margin-left: 10px;
+  margin-top: 5%;
   width: 40vw;
-  height: 73vh;
+  height: 71vh;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -112,9 +112,9 @@ body {
   border: 1px black solid;
 }
 
-.donationButton :link {
+.donationButton a {
   color: black;
-  font: 233%;
+  font-size: 1em;
 }
 
 .donationButton.secondary {

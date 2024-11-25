@@ -40,7 +40,7 @@ export const DonationPage = () => {
                     </div>
                 </div>
         </div> 
-        <div className="sections">
+        <div className="sections" style={{backgroundColor: 'beige'}}>
             <div className="content-container"> 
                 <h3> <b>Fundraising for those affected by the recent fire in Barangay Pasonanca</b> </h3>
                 <p className="credits">Creator: Maria Donicia Solomon</p>
