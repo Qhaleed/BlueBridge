@@ -11,7 +11,26 @@ body {
   color: rgb(0, 0, 0);
 }
 html {
+  transition: 500ms;
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+@font-face {
+  font-family: "Harmonie";
+  src: url("/public/fonts/fonts/harmonie/Harmonie.ttf") format("truetype"); /* Use the correct path to the font file */
+}
+@font-face {
+  font-family: "Glacial";
+  src: url("/public/fonts/fonts/glacial-indifference/GlacialIndifference-Regular.otf")
+    format("truetype"); /* Use the correct path to the font file */
+}
+
+@font-face {
+  font-family: "Pluma";
+  src: url("/public/fonts/fonts/TextFonts.net_pluma-font/Pluma.otf")
+    format("truetype"); /* Use the correct path to the font file */
+}

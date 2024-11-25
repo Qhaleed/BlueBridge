@@ -137,6 +137,8 @@ export const LandingPage = () => {
         </div>
 
 
+
+        <button className='donation-button'>Donate Now   </button>
       </div >
 
 
