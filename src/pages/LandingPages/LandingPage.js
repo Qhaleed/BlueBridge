@@ -56,7 +56,7 @@ export const LandingPage = () => {
       <div className='section4'>
         <div className='section4-container'>
           <div className='section4-image-container'>
-            <img src='./2.png'></img>
+            <img src='./2.png' alt='2.png'></img>
           </div>
           <div className='section4-text-container'>
             <h1 className='section4-text-container-header'>
