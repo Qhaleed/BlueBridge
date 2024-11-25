@@ -8,6 +8,7 @@ export const LandingPage = () => {
     <>
       <MyNavbar />
       <div className='section1' id='home'>
+        <img src='global/1.png'></img>
       </div>
       <BlueBorder />
 
@@ -22,7 +23,7 @@ export const LandingPage = () => {
           <h1>SUCCESS <span className='subhead-span'>STORIES</span></h1>
         </div>
         <div className='disaster-image-container'>
-          <img src='./picture1.webp'></img>
+          <img src='./picture1.webp' alt='picture-1'></img>
         </div>
       </div>
 
@@ -44,24 +45,7 @@ export const LandingPage = () => {
               <h1>Fundraising for those affected by the recent fire in barangay Pasonanca</h1>
             </div>
           </div>
-          <div className='card'>
-            <div className='picture-container'>
-              <img src='./picture1.webp' alt='event-image'></img>
-            </div>
 
-            <div className='card-body'>
-              <h1>Fundraising for those affected by the recent fire in barangay Pasonanca</h1>
-            </div>
-          </div>
-          <div className='card'>
-            <div className='picture-container'>
-              <img src='./picture1.webp' alt='event-image'></img>
-            </div>
-
-            <div className='card-body'>
-              <h1>Fundraising for those affected by the recent fire in barangay Pasonanca</h1>
-            </div>
-          </div>
 
 
 
