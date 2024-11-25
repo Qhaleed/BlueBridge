@@ -33,6 +33,7 @@
   padding: 40px 60px;
   background-color: rgb(255, 255, 255);
   width: 30%;
+  font-family: "Montserrat";
   border-radius: 300px;
   border: 1px solid gold;
   color: black;
@@ -43,6 +44,7 @@
 }
 
 .subhead {
+  font-family: "Pluma";
   margin-top: 30px;
 }
 .subhead h1 {
@@ -107,6 +109,7 @@
   color: #133a8d;
 }
 .section3-subtitle {
+  font-family: "montserrat";
   font-size: 20px;
   font-weight: 100;
   padding-left: 50px;
@@ -145,6 +148,7 @@
 /* Card body styling */
 .card-body {
   padding: 10px;
+  font-family: "Glacial";
 }
 
 /* Image styling */
@@ -173,6 +177,7 @@
 }
 .amount-raised {
   padding-top: 30px;
+  font-family: "montserrat";
 }
 
 .section4 {
@@ -184,6 +189,10 @@
   height: 50vh;
   display: flex;
   flex-direction: row;
+}
+.section4-container h1 {
+  font-family: "montserrat";
+  font-weight: 100;
 }
 .section4-image-container {
   width: 30%;
@@ -297,6 +306,8 @@
   width: 50%;
   height: 25vh;
   position: relative;
+  display: flex;
+  text-align: center;
 }
 
 .donation-image-container img {
@@ -306,4 +317,15 @@
   height: auto;
   bottom: -275%;
   left: 30%;
+}
+
+.donation-button {
+  width: 35%;
+  height: auto;
+  padding: 30px 50px;
+  position: absolute;
+  left: 33%;
+
+  top: 450%;
+  border: solid 1px;
 }
