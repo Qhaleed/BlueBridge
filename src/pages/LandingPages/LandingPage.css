@@ -111,54 +111,76 @@
   font-weight: 100;
   padding-left: 50px;
 }
+/* Container for the card layout */
 .grid-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  padding: 30px 0px;
+  padding: 30px 0;
   color: white;
-  grid-template-columns: repeat(4, 1fr);
+  height: auto;
 }
+
+/* Card styling */
 .card {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  height: 20vh;
-  background-color: red;
-  color: rgb(0, 0, 0);
-  /* border-radius: 30px; */
-  margin: 50px;
-  border: black 1px solid;
-  /* border-radius: 30px; */
-  transition: 500ms;
+  width: 90%;
+  height: auto;
+  margin: 10px 50px;
+  background-color: #f1f1ea;
+  color: black;
   border: none;
+  border-radius: 30px;
   overflow: hidden;
+  transition: 0.5s;
 }
+
+/* Container for the image */
 .card .picture-container {
-  width: 30%;
-  height: 100%;
+  width: 15%;
+  padding: 10px;
 }
+
+/* Card body styling */
+.card-body {
+  padding: 10px;
+}
+
+/* Image styling */
 .card img {
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
-.card:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: 700ms;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 30px;
+/* Progress bar styling */
+.progress-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #162f65;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
 }
+
+.progress-bar .progress {
+  width: 50%; /* Adjust this width based on your progress */
+  height: 100%;
+  background-color: #e1a736;
+  border-radius: 5px;
+}
+.amount-raised {
+  padding-top: 30px;
+}
+
 .section4 {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
 }
 .section4-container {
-  width: 100%;
+  width: 95%;
   height: 50vh;
   display: flex;
   flex-direction: row;
@@ -190,43 +212,98 @@
 .section4-text-container .call {
   color: #133a8d;
 }
+/* Container for the card layout */
 .section4-card {
   margin-top: 20px;
-
   width: 100%;
-  background-color: rgb(212, 210, 210);
+  background-color: #f1f1ea;
   border-radius: 50px;
-  padding: 0px 10px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
 }
+
+/* Container for the image */
 .section4-card-image {
   overflow: hidden;
   width: 15%;
   height: 20%;
   object-fit: contain;
 }
+
+/* Image styling */
 .section4-card-image img {
   width: 130px;
-  transform: scale(0.9);
   height: 13vh;
+  transform: scale(0.9);
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.section4-card .status-bar {
-  background-color: blue;
-  width: 100%;
-  height: 3vh;
-  border-radius: 50px;
-}
-.section4-card .status-bar .completed {
-  background-color: gold;
-  width: 30%;
-  height: 3vh;
-  border-radius: 50px;
-}
-
+/* Card body styling */
 .section4-card-body {
   padding-left: 30px;
   width: 100%;
+}
+
+/* Status bar styling */
+.status-bar {
+  background-color: #162f65;
+  width: 100%;
+  height: 3vh;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+.section4 .progress-bar {
+  height: 25px;
+}
+
+.section5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  overflow: hidden;
+}
+.section5-text-container {
+  width: 100%;
+  color: gold;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.section5-text-container h1 {
+  font-family: Cedarville Cursive;
+  padding: 0px 200px;
+}
+.section5-subhead-container {
+  font-size: 50px;
+  font-style: italic;
+}
+.call {
+  color: #133a8d;
+}
+.for {
+  color: #082053;
+}
+.goods {
+  color: gold;
+}
+
+.donation-image-container {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+}
+
+.donation-image-container img {
+  object-fit: cover;
+  position: absolute;
+  width: 150%;
+  height: auto;
+  bottom: -275%;
+  left: 30%;
 }
