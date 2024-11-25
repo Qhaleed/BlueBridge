@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
   padding: 0.5%;
   width: 100%;
   min-height: 650px;
@@ -14,15 +15,16 @@ body {
 .content-container  {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;    
-  width: 35%;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
   height: 60%;
   padding: 20px;
   gap: 1rem;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .content-container  h3 {
@@ -48,3 +50,57 @@ body {
   color: #444;
   font-size: 1rem;
 }
+
+
+
+/**************************************************/ 
+
+.button-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%; 
+  justify-content: center;
+}
+
+.graphic-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 72vw; 
+  height: 26vh;
+  padding: 5px; 
+  margin-top: 2%;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  gap: 1rem; 
+}
+
+.progress-filled {
+  background-color: #4caf50; 
+  height: 100%;
+  width: 100%; 
+  transition: width 0.4s ease;
+}
+
+.volunteerButton {
+  background-color: #008cba;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.volunteerButton:hover {
+  background-color: #005f75;
+}
+
+
+

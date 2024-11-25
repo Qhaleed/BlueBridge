@@ -40,7 +40,7 @@ export const DonationPage = () => {
                     </div>
                 </div>
         </div> 
-        <div className="sectionsV">
+        <div className="sectionsV2">
             <div className="content-containerV"> 
                 <h3> <b>Fundraising for those affected by the recent fire in Barangay Pasonanca</b> </h3>
                 <p className="creditsV">Creator: Maria Donicia Solomon</p>
@@ -71,7 +71,9 @@ export const DonationPage = () => {
                         </div>
                     </div>
                 </div>
-        </div>         <div className="sectionsV">
+        </div>        
+        
+        <div className="sectionsV">
             <div className="content-containerV"> 
                 <h3> <b>Fundraising for those affected by the recent fire in Barangay Pasonanca</b> </h3>
                 <p className="creditsV">Creator: Maria Donicia Solomon</p>
