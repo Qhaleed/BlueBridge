@@ -11,8 +11,7 @@ export const VolunteerPage = () => {
 
             </div>
 
-            <div className="graphic-Container">     
-                <h1> </h1>
+
             </div> 
         </div>
     </>
