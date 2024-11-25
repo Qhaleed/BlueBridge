@@ -112,6 +112,11 @@ body {
   border: 1px black solid;
 }
 
+.donationButton :link {
+  color: black;
+  font: 233%;
+}
+
 .donationButton.secondary {
   background-color: #e1a736;
 }
