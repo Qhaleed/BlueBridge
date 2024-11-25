@@ -10,7 +10,7 @@ function MyNavbar() {
                 <ul>
                     <li>  <Link to="/"> Home </Link> </li>
                     <li> <Link to="/page2"> Donation </Link> </li>
-                    <li><a href="#volunteers" onClick={(e) => handleScroll(e, "volunteer")}>Volunteers</a></li>
+                    <li> <Link to="/page3">  Volunteers </Link> </li>
                     <li><a href="#goods" onClick={(e) => handleScroll(e, "goods")}>Goods</a></li>
                 </ul>
 
