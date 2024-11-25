@@ -11,7 +11,6 @@ export const VolunteerPage = () => {
 
             </div>
 
-            <div className="graphic-Container"> 
 
             </div> 
         </div>
