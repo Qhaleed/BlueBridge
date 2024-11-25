@@ -8,11 +8,10 @@ export const VolunteerPage = () => {
       <MyNavbar />
         <div className="sections">
             <div className="content-container"> 
-
+                <h1> </h1>
             </div>
 
 
-            </div> 
         </div>
     </>
   );
