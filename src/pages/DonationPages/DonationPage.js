@@ -29,8 +29,7 @@ export const DonationPage = () => {
 
                     <div className="input-container">
                         <div className="button-container">
-                            <button className="donation-button" style={{fontSize: '0.5em'}}> <Link to="/page3"> Donate </Link> </button>
-                            <button className="donation-button secondary">Share</button>
+
                         </div>
 
                         <div className="donation-list">
@@ -61,8 +60,8 @@ export const DonationPage = () => {
 
                     <div className="input-container">
                         <div className="button-container">
-                            <button className="donation-button" style={{fontSize: '0.5em'}}> <Link to="/page3"> Donate </Link> </button>
-                            <button className="donation-button secondary">Share</button>
+                            <button className="donationButton"> Donate now </button>
+                            <button className="donationButton secondary"> Share now </button> 
                         </div>
 
                         <div className="donation-list">
@@ -92,9 +91,9 @@ export const DonationPage = () => {
                     </div>
 
                     <div className="input-container">
+
                         <div className="button-container">
-                            <button className="donation-button" style={{fontSize: '0.5em'}}> <Link to="/page3"> Donate </Link> </button>
-                            <button className="donation-button secondary">Share</button>
+
                         </div>
 
                         <div className="donation-list">

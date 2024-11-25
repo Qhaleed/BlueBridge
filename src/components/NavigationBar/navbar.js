@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Link } from 'react-router-dom';
 function MyNavbar() {
     return (
         <>
@@ -7,8 +8,8 @@ function MyNavbar() {
                     <img src="/Logo.png" alt="BlueRidgeLogo" />
                 </div>
                 <ul>
-                    <li><a href="#home" onClick={(e) => handleScroll(e, "home")}>Home</a></li>
-                    <li><a href="#donation" onClick={(e) => handleScroll(e, "donation")}>Donation</a></li>
+                    <li>  <Link to="/"> Home </Link> </li>
+                    <li> <Link to="/page2"> Donation </Link> </li>
                     <li><a href="#volunteers" onClick={(e) => handleScroll(e, "volunteer")}>Volunteers</a></li>
                     <li><a href="#goods" onClick={(e) => handleScroll(e, "goods")}>Goods</a></li>
                 </ul>

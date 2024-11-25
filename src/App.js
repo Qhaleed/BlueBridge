@@ -11,7 +11,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-
           <Route path="/page2" element={<DonationPage />} />
           <Route path="/page3" element={<PaymentPage />} /> 
         </Routes>
