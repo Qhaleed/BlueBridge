@@ -1,26 +1,24 @@
 import React, { useState } from 'react';
-import './EventModal.css';
+import "./FormPage.css";
 
-const Modal = ({ isOpen, onClose, onSubmit }) => {
+const FormModal = ({ isOpen, onClose, onSubmit }) => {
     const [event, setEvent] = useState('');
-    const [donation, setDonation] = useState('');
-    const [volunteers, setVolunteers] = useState('');
-    const [description, setDescription] = useState('');
     const [Name, setName] = useState('');
+    const [Occupation, setOccupation] = useState('');
+    const [ContactNumber, setContactNumber] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Facebook, setFacebook] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!event || !donation || !volunteers || !description || !Name) {
+        if (!event || !Name || !Occupation || !ContactNumber || !Email || !Facebook) {
             setError('All fields are required.');
             return;
         }
-        if (volunteers > 50) {
-            setError('Number of volunteers cannot exceed 50.');
-            return;
-        }
+
         setError('');
-        onSubmit({ event, donation, volunteers, description, Name });
+        onSubmit({ event, Name: Name, Occupation: Occupation, contactNumber: ContactNumber, Email: Email, Facebook: Facebook });
         onClose();
     };
 
@@ -42,26 +40,26 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
                         <input type="text" value={event} onChange={(e) => setEvent(e.target.value)} />
                     </label>
                     <label>
-                        Donation Amount:
-                        <input type="number" value={donation} onChange={(e) => setDonation(e.target.value)} />
+                        Contact Number Amount:
+                        <input type="number" value={ContactNumber} onChange={(e) => setContactNumber(e.target.value)} />
                     </label>
                     <label>
-                        Number of Volunteers:
-                        <input type="number" value={volunteers} onChange={(e) => setVolunteers(e.target.value)} />
+                        Occupation:
+                        <input type="number" value={Occupation} onChange={(e) => setOccupation(e.target.value)} />
                     </label>
                     <label>
-                        Description:
-                        <textarea value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+                        Email
+                        <input type="number" value={Email} onChange={(e) => setEmail(e.target.value)} />
                     </label>
                     <label>
-                        Description:
-                        <textarea value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+                        Facebook:
+                        <textarea value={Facebook} onChange={(e) => setFacebook(e.target.value)}></textarea>
                     </label>
-                    <button type="submit">Create Event</button>
+                    <button type="submit"> Submit </button>
                 </form>
             </div>
         </div>
     );
 };
 
-export default Modal;
+export default FormModal;
