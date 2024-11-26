@@ -5,6 +5,7 @@ import { PaymentPage } from './pages/PaymentPages/PaymentPage'
 import LandingPage from './pages/LandingPages/LandingPage';
 
 import './App.css';
+import DocumentationPage from './pages/DocumentationPage/DocumentationPage';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/page2" element={<DonationPage />} />
-          <Route path="/page3" element={<VolunteerPage />} />
+          <Route path="/page3" element={<DocumentationPage />} />
           <Route path="/page5" element={<PaymentPage />} />
         </Routes>
       </Router>

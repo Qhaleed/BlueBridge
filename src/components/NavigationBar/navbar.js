@@ -13,7 +13,7 @@ function MyNavbar() {
                 <ul>
                     <li>  <Link to="/"> Home </Link> </li>
                     <li> <Link to="/page2"> Donation </Link> </li>
-                    <li> <Link to="/page3">  Volunteers </Link> </li>
+                    <li> <Link to="/page3">  Documentation </Link> </li>
                 </ul>
                 <div className="search-container">
                     <FontAwesomeIcon icon={faSearch} className="search-icon" />
