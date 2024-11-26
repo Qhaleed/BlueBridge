@@ -68,7 +68,7 @@ export const DonationPage = () => {
             </div>
 
             <button className="buttonCreate" onClick={() => setModalOpen(true)}> + </button>
-
+            
             <Modal
                 isOpen={isModalOpen}
                 onClose={() => setModalOpen(false)}
@@ -78,7 +78,6 @@ export const DonationPage = () => {
             <FormModal
                 isOpen={isFormModalOpen}
                 onClose={() => setFormModalOpen(false)}
-                onSubmit={handleCreateEvent}
             />
 
             <div className="events-list">
