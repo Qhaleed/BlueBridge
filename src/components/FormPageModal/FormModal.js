@@ -29,7 +29,7 @@ const FormModal = ({ isOpen, onClose, onSubmit }) => {
             <div className="modal">
                 <button className="close-button" onClick={onClose}>X</button>
                 <form onSubmit={handleSubmit}>
-                    <h2>Create Event</h2>
+                    <h2>Volunteer for an Event</h2>
                     {error && <p className="error">{error}</p>}
                     <label>
                         Name:
