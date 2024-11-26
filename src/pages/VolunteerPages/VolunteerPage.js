@@ -6,14 +6,14 @@ export const VolunteerPage = () => {
   return (
     <>
       <MyNavbar />
-        <div className="sections">
-            <div className="content-container"> 
+      <div className="sections">
+        <div className="content-container">
 
-            </div>
-
-
-            </div> 
         </div>
+
+
+      </div>
+
     </>
   );
 };
