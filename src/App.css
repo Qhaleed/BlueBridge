@@ -4,6 +4,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   transition: 500ms;
 }
 body {
@@ -33,4 +34,19 @@ html {
   font-family: "Pluma";
   src: url("/public/fonts/fonts/TextFonts.net_pluma-font/Pluma.otf")
     format("truetype"); /* Use the correct path to the font file */
+}
+.App {
+  text-align: center;
+}
+
+.events-list {
+  margin-top: 2rem;
+}
+
+.event-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
