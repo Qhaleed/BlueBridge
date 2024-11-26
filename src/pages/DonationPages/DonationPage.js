@@ -56,7 +56,7 @@ export const DonationPage = () => {
                     <div className="input-containerV">
                         <div className="button-containerV">
                             <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                            <button className="donationButton secondaryV" onClick={() => setFormModalOpen(true)}> Share now </button>
+                            <button className="donationButton secondaryV" onClick={() => setFormModalOpen(true)}> Volunteer now </button>
                         </div>
 
                         <div className="donation-listV">
@@ -99,13 +99,13 @@ export const DonationPage = () => {
 
                         <div className="graphic-Container-Graphic">
                             <h2 className="donation-titleV">Php {event.donation} needed</h2>
-                            <div className="circular-graphV" style={{ background: 'blue' }}>
+                            <div className="circular-graphV" style={{ background: '#0e2448', zIndex: '0' }}>
                                 <div className="percentageV">0%</div>
                             </div>
                             <div className="input-containerV">
                                 <div className="button-containerV">
                                     <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                                    <button className="donationButton secondaryV"> Volunteer </button>
+                                    <button className="donationButton secondaryV" onClick={() => setFormModalOpen(true)}> Volunteer </button>
                                 </div>
                                 <div className="donation-listV">
                                     {/* Donation list */}

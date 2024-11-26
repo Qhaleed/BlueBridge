@@ -12,6 +12,7 @@ const FormModal = ({ isOpen, onClose, onSubmit }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        event.preventDefault();
         if (!event || !Name || !Occupation || !ContactNumber || !Email || !Facebook) {
             setError('All fields are required.');
             return;
@@ -19,6 +20,7 @@ const FormModal = ({ isOpen, onClose, onSubmit }) => {
 
         setError('');
         onSubmit({ event, Name: Name, Occupation: Occupation, contactNumber: ContactNumber, Email: Email, Facebook: Facebook });
+        alert('user added');
         onClose();
     };
 

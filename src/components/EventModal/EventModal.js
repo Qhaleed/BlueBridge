@@ -53,10 +53,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
                         Description:
                         <textarea value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                     </label>
-                    <label>
-                        Description:
-                        <textarea value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
-                    </label>
+
                     <button type="submit">Create Event</button>
                 </form>
             </div>
