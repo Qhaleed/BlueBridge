@@ -105,7 +105,7 @@ export const DonationPage = () => {
                             <div className="input-containerV">
                                 <div className="button-containerV">
                                     <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                                    <button className="donationButton secondaryV"> Share now </button>
+                                    <button className="donationButton secondaryV"> Volunteer </button>
                                 </div>
                                 <div className="donation-listV">
                                     {/* Donation list */}
