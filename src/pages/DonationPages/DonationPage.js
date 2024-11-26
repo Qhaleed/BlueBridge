@@ -6,9 +6,9 @@ import "./DonationStyleSheet.css";
 import MyFooter from "../../components/Footer/Footer";
 import Modal from "../../components/EventModal/EventModal"; // Assuming Modal component is in the same directory
 import FormModal from "../../components/FormPageModal/FormModal";
+import DisplayDataButton from "../../components/DisplayDataButton/DisplayDataButton"; // Import your DisplayDataButton component
 
 export const DonationPage = () => {
-
     const [isFormModalOpen, setFormModalOpen] = useState(false);
     const [isModalOpen, setModalOpen] = useState(false);
     const [events, setEvents] = useState(() => {
@@ -56,7 +56,8 @@ export const DonationPage = () => {
                     <div className="input-containerV">
                         <div className="button-containerV">
                             <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                            <button className="donationButton secondaryV" onClick={() => setFormModalOpen(true)}> Volunteer now </button>
+                            <button className="donationButton secondaryV" onClick={() => setFormModalOpen(true)}> Share now </button>
+                            <DisplayDataButton />
                         </div>
 
                         <div className="donation-listV">
