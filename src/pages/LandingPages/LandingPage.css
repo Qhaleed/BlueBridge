@@ -168,6 +168,7 @@
 
 /* Card body styling */
 .card-body {
+  width: 100%;
   padding: 10px;
   font-family: "Glacial";
 }
@@ -196,6 +197,13 @@
   background-color: #e1a736;
   border-radius: 5px;
 }
+.event2 {
+  width: 30%; /* Adjust this width based on your progress */
+  height: 100%;
+  background-color: #e1a736;
+  border-radius: 5px;
+}
+
 .amount-raised {
   padding-top: 30px;
   font-family: "montserrat";
