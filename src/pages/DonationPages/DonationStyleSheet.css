@@ -224,8 +224,9 @@ body {
   gap: 2rem;
 }
 
-.content-Container-Modal p {
+.event-card .content-Container-Modal p {
   font-size: 10px;
+  color: black;
 }
 
 .content-Container-Modal h3 {

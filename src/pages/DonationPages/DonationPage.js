@@ -31,24 +31,24 @@ export const DonationPage = () => {
                 </div>
 
                 <div className="graphic-ContainerV">
-                    <h2 className="donation-titleV">Php 20,000 needed</h2>
-                    <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
-                        <div className="percentageV">50%</div>
-                    </div>
+                                <h2 className="donation-titleV">Php 20,000 needed</h2>
+                                <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
+                                    <div className="percentageV">50%</div>
+                                </div>
 
-                    <div className="input-containerV">
-                        <div className="button-containerV">
-                            <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                            <button className="donationButton secondaryV"> Share now </button>
-                        </div>
+                                <div className="input-containerV">
+                                    <div className="button-containerV">
+                                        <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
+                                        <button className="donationButton secondaryV"> Share now </button>
+                                    </div>
 
-                        <div className="donation-listV">
-                            <p>*** *** donated Php1000.00</p>
-                            <p>*** *** donated Php500.00</p>
-                        </div>
+                                    <div className="donation-listV">
+                                        <p>*** *** donated Php1000.00</p>
+                                        <p>*** *** donated Php500.00</p>
+                                    </div>
 
-                        <button className="createEventButton" onClick={() => setModalOpen(true)}>Create Event</button>
-                    </div>
+                                    <button className="createEventButton" onClick={() => setModalOpen(true)}>Create Event</button>
+                                </div>
                 </div>
             </div>
 
@@ -63,13 +63,32 @@ export const DonationPage = () => {
                     <div className="event-card">
                         <div key={index} className="content-Container-Modal"> 
                             <h3>{event.event}</h3>
+                            <p> {event.Name} </p>
                             <p>Donation: Php{event.donation}</p>
                             <p>Volunteers: {event.volunteers}</p>
                             <p>{event.description}</p>
                         </div>
-                        <div className="graphic-Container-Graphic"> 
-                            
-                        </div>
+
+                                <div className="graphic-Container-Graphic"> 
+                                    <h2 className="donation-titleV">Php {event.donation} needed</h2>
+                                    <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
+                                        <div className="percentageV">50%</div>
+                                    </div>
+
+                                        <div className="input-containerV">
+                                            <div className="button-containerV">
+                                                <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
+                                                <button className="donationButton secondaryV"> Share now </button>
+                                            </div>
+
+                                            <div className="donation-listV">
+                                                <p>*** *** donated Php1000.00</p>
+                                                <p>*** *** donated Php500.00</p>
+                                            </div>
+
+                                            <button className="createEventButton" onClick={() => setModalOpen(true)}>Create Event</button>
+                                        </div>
+                                    </div>
                     </div> 
                 ))}
             </div>

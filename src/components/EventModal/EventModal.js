@@ -6,11 +6,12 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
     const [donation, setDonation] = useState('');
     const [volunteers, setVolunteers] = useState('');
     const [description, setDescription] = useState('');
+    const [Name, setName] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!event || !donation || !volunteers || !description) {
+        if (!event || !donation || !volunteers || !description || !Name) {
             setError('All fields are required.');
             return;
         }
@@ -19,7 +20,7 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
             return;
         }
         setError('');
-        onSubmit({ event, donation, volunteers, description });
+        onSubmit({ event, donation, volunteers, description, Name });
         onClose();
     };
 
@@ -32,6 +33,10 @@ const Modal = ({ isOpen, onClose, onSubmit }) => {
                 <form onSubmit={handleSubmit}>
                     <h2>Create Event</h2>
                     {error && <p className="error">{error}</p>}
+                    <label>
+                        Name:
+                        <input type="text" value={Name} onChange={(e) => setName(e.target.value)} />
+                    </label>
                     <label>
                         Event:
                         <input type="text" value={event} onChange={(e) => setEvent(e.target.value)} />
