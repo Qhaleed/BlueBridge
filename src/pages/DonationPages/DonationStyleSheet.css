@@ -177,16 +177,27 @@ body {
   align-items: center;
   display: flex;
   background-color: white;
-  padding: 0.5%;
-  width: 100%;
+  margin: 0;
+  width: 100%; 
   min-height: 650px;
+
 }
 
 .event-card {
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+  background-color:yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-Container-Modal {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: black;
+  color: rgb(169, 50, 50);
   width: 35%;
   height: 60%;
   padding: 20px;
@@ -195,4 +206,30 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-top: 5%;
+}
+
+.graphic-Container-Graphic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-top: 5%;
+  width: 40vw;
+  height: 71vh;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  gap: 2rem;
+}
+
+.content-Container-Modal p {
+  font-size: 10px;
+}
+
+.content-Container-Modal h3 {
+  color: #132753;
+  text-align: left;
+  font-size: 2.5rem;
 }
