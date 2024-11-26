@@ -160,7 +160,7 @@ export const DonationPage = () => {
                 })}
             </div>
 
-            <button onClick={clearEvents}>Clear Events</button>
+            <button onClick={clearEvents} className="clear">Clear Events</button>
             <MyFooter />
         </>
     );
