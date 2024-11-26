@@ -46,11 +46,11 @@ export const DonationPage = () => {
                                         <p>*** *** donated Php1000.00</p>
                                         <p>*** *** donated Php500.00</p>
                                     </div>
-
-                                    <button className="createEventButton" onClick={() => setModalOpen(true)}>Create Event</button>
                                 </div>
                 </div>
+
             </div>
+            <button className="buttonCreate" onClick={() => setModalOpen(true)}> + </button>
 
             <Modal
                 isOpen={isModalOpen}
@@ -77,8 +77,8 @@ export const DonationPage = () => {
 
                                 <div className="graphic-Container-Graphic"> 
                                     <h2 className="donation-titleV">Php {event.donation} needed</h2>
-                                    <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
-                                        <div className="percentageV">50%</div>
+                                    <div className="circular-graphV" style={{ background: 'blue'}}>
+                                        <div className="percentageV"> 0%</div>
                                     </div>
 
                                         <div className="input-containerV">
@@ -88,11 +88,8 @@ export const DonationPage = () => {
                                             </div>
 
                                             <div className="donation-listV">
-                                                <p>*** *** donated Php1000.00</p>
-                                                <p>*** *** donated Php500.00</p>
-                                            </div>
 
-                                            <button className="createEventButton" onClick={() => setModalOpen(true)}>Create Event</button>
+                                            </div>
                                         </div>
                                     </div>
                     </div> 
