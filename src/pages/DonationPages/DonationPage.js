@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MyNavbar from "../../components/NavigationBar/navbar";
 import pic from "./ImageContainer/image.png";
@@ -8,7 +8,16 @@ import Modal from "../../components/EventModal/EventModal"; // Assuming Modal co
 
 export const DonationPage = () => {
     const [isModalOpen, setModalOpen] = useState(false);
-    const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState(() => {
+        // Retrieve events from local storage or default to an empty array
+        const savedEvents = localStorage.getItem('events');
+        return savedEvents ? JSON.parse(savedEvents) : [];
+    });
+
+    useEffect(() => {
+        // Save events to local storage whenever the events state changes
+        localStorage.setItem('events', JSON.stringify(events));
+    }, [events]);
 
     const handleCreateEvent = (event) => {
         setEvents([...events, event]);
