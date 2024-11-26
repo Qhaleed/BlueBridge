@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MyNavbar from "../../components/NavigationBar/navbar";
 import pic from "./ImageContainer/image.png";
@@ -8,16 +8,7 @@ import Modal from "../../components/EventModal/EventModal"; // Assuming Modal co
 
 export const DonationPage = () => {
     const [isModalOpen, setModalOpen] = useState(false);
-    const [events, setEvents] = useState(() => {
-        // Retrieve events from local storage or default to an empty array
-        const savedEvents = localStorage.getItem('events');
-        return savedEvents ? JSON.parse(savedEvents) : [];
-    });
-
-    useEffect(() => {
-        // Save events to local storage whenever the events state changes
-        localStorage.setItem('events', JSON.stringify(events));
-    }, [events]);
+    const [events, setEvents] = useState([]);
 
     const handleCreateEvent = (event) => {
         setEvents([...events, event]);
@@ -40,18 +31,22 @@ export const DonationPage = () => {
                 </div>
 
                 <div className="graphic-ContainerV">
-                    <h2 className="donation-titleV">Php 20,000 needed</h2>
-                    <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
-                        <div className="percentageV">50%</div>
-                    </div>
+                                <h2 className="donation-titleV">Php 20,000 needed</h2>
+                                <div className="circular-graphV" style={{ background: `conic-gradient(#e1a736 50%, #162f65 50%)` }}>
+                                    <div className="percentageV">50%</div>
+                                </div>
 
-                    <div className="input-containerV">
-                        <div className="button-containerV">
-                            <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
-                            <button className="donationButton secondaryV"> Share now </button>
-                        </div>
+                                <div className="input-containerV">
+                                    <div className="button-containerV">
+                                        <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
+                                        <button className="donationButton secondaryV"> Share now </button>
+                                    </div>
 
-
+                                    <div className="donation-listV">
+                                        <p>*** *** donated Php1000.00</p>
+                                        <p>*** *** donated Php500.00</p>
+                                    </div>
+                                </div>
                 </div>
 
             </div>
@@ -65,9 +60,39 @@ export const DonationPage = () => {
 
             <div className="events-list">
                 {events.map((event, index) => (
-                    <div className="event-card" key={index}>
-                        <div className="content-Container-Modal">
+                    <div className="event-card">
+                        <div key={index} className="content-Container-Modal"> 
                             <h3>{event.event}</h3>
+                            <p className="creditsV"> {event.Name} </p>
+                                <div className="image-containerV"> 
+                                    <img
+                                        src={pic}
+                                        alt="Fundraising event for fire victims in Barangay Pasonanca"
+                                    />
+                                </div>
+                                <div className="border"> 
+                                    <p className="contentV">{event.description}</p>
+                                </div>
+                        </div>
+
+                                <div className="graphic-Container-Graphic"> 
+                                    <h2 className="donation-titleV">Php {event.donation} needed</h2>
+                                    <div className="circular-graphV" style={{ background: 'blue'}}>
+                                        <div className="percentageV"> 0%</div>
+                                    </div>
+
+                                        <div className="input-containerV">
+                                            <div className="button-containerV">
+                                                <button className="donationButtonV"> <Link to="/page5"> Donate now </Link> </button>
+                                                <button className="donationButton secondaryV"> Share now </button>
+                                            </div>
+
+                                            <div className="donation-listV">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div> 
                 ))}
             </div>
 
