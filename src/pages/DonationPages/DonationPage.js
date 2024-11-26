@@ -70,7 +70,9 @@ export const DonationPage = () => {
                                         alt="Fundraising event for fire victims in Barangay Pasonanca"
                                     />
                                 </div>
-                            <p className="contentV">{event.description}</p>
+                                <div className="border"> 
+                                    <p className="contentV">{event.description}</p>
+                                </div>
                         </div>
 
                                 <div className="graphic-Container-Graphic"> 
