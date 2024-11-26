@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MyNavbar from "../../components/NavigationBar/navbar";
 import venue1 from "./imageContainer/image.png";
 import "./VolunteerStyleSheet.css";
+import MyFooter from "../../components/Footer/Footer";
 
 export const VolunteerPage = () => {
 
@@ -129,6 +130,7 @@ export const VolunteerPage = () => {
           <p>{progress} of {maxVolunteers} volunteers recruited.</p>
         </div>
       </div>
+      <MyFooter></MyFooter>
     </>
   );
 };
