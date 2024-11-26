@@ -225,8 +225,9 @@ body {
 }
 
 .event-card .content-Container-Modal p {
-  font-size: 10px;
-  color: black;
+  text-align: left;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .content-Container-Modal h3 {

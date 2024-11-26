@@ -63,10 +63,14 @@ export const DonationPage = () => {
                     <div className="event-card">
                         <div key={index} className="content-Container-Modal"> 
                             <h3>{event.event}</h3>
-                            <p> {event.Name} </p>
-                            <p>Donation: Php{event.donation}</p>
-                            <p>Volunteers: {event.volunteers}</p>
-                            <p>{event.description}</p>
+                            <p className="creditsV"> {event.Name} </p>
+                                <div className="image-containerV"> 
+                                    <img
+                                        src={pic}
+                                        alt="Fundraising event for fire victims in Barangay Pasonanca"
+                                    />
+                                </div>
+                            <p className="contentV">{event.description}</p>
                         </div>
 
                                 <div className="graphic-Container-Graphic"> 
