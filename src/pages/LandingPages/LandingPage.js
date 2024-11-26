@@ -9,11 +9,11 @@ export const LandingPage = () => {
     <>
       <MyNavbar />
       <div className='section1' id='home'>
-        <img src='global/1.png'></img>
+        <img src='global/1.png' alt='1.png'></img>
         <div className='section-1-text-container'>
           <h1 className='section-1-head'>What is BlueRidge?</h1>
-          <p>consectetur adipiscing elit, sed do <br />
-            eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Blue Ridge is an online platform that aims to centralize<br />
+            and Improve the online volunteering and donation scene, creating a more transparent and accessible environment to send love through donations and volunteering works to those who are willing to give and those truly in need</p>
         </div>
       </div>
       <BlueBorder />
@@ -59,11 +59,11 @@ export const LandingPage = () => {
               <img src="./picture1.webp" alt="event-image" />
             </div>
             <div class="card-body">
-              <h1>Fundraising for those affected by the recent fire in barangay Pasonanca</h1>
+              <h1>Zamboanga City Canelar Fire Incident</h1>
               <div class="progress-bar">
                 <div class="progress"></div>
               </div>
-              <h2 className='amount-raised'>Php12,400.00 raised </h2>
+              <h2 className='amount-raised'>Php7,400.00 raised </h2>
             </div>
           </div>
           <div class="card">
@@ -71,11 +71,11 @@ export const LandingPage = () => {
               <img src="./picture1.webp" alt="event-image" />
             </div>
             <div class="card-body">
-              <h1>Fundraising for those affected by the recent fire in barangay Pasonanca</h1>
+              <h1>Zamboanga City fireworks warehouse blast</h1>
               <div class="progress-bar">
                 <div class="progress"></div>
               </div>
-              <h2 className='amount-raised'>Php12,400.00 raised </h2>
+              <h2 className='amount-raised'>Php22,320.00 raised </h2>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export const LandingPage = () => {
                 <img src="./picture1.webp" alt="Barangay Tumaga" />
               </div>
               <div class="section4-card-body">
-                <h1>Barangay Tumaga</h1>
+                <h1>Zamboanga City fireworks warehouse blast</h1>
                 <div class="progress-bar">
                   <div class="progress"></div>
                 </div>
@@ -113,9 +113,9 @@ export const LandingPage = () => {
                 <img src="./picture1.webp" alt="Barangay Tumaga" />
               </div>
               <div class="section4-card-body">
-                <h1>Barangay Tumaga</h1>
+                <h1>Zamboanga City Canelar Fire Incident</h1>
                 <div class="progress-bar">
-                  <div class="progress"></div>
+                  <div class="progress" id='event2'></div>
                 </div>
                 <h2>12 Volunteers</h2>
               </div>
