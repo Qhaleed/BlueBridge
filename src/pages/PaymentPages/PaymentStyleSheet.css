@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+
 .Container {
     display: flex;
     justify-content: center;
@@ -24,15 +27,22 @@
     height: 60vh;
     border-radius: 20px;
     padding: 40px;
-    gap: 3%;
+    gap: 5px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
     background-color: #fff9e7;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Ensure content flows vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
     text-align: left;
-  
+    z-index: 100;
+}
+
+.textHeader {
+    margin-left: 5px; /* Add space below the text */
+    color: #e7c665; /* Keep text color */
+    font-family: Montserrat;
+    font-size: 24.6px;
   }
   
   .PaymentMode {
@@ -41,18 +51,19 @@
   }
   
   button {
-    margin: 5px;
     border-radius: 10px;
     border: 1px #e7c665 solid;
     width: 7.5vw;
-    height: 5vh;
+    height: 7vh;
     margin: 7px;
     color: #e7c665;
     background-color: #fff;
+    font-size: 24.6px;
+    font-family: Montserrat;
   }
   
   button:hover {
-    background-color: #e7c665;
+    background-color: #e4dbc1;
   }
   
   
@@ -66,6 +77,96 @@
     .PaymentInput:hover {
       background-color: #e7c665;
     }
-  
 
+    #PaymentOptions {
+      display: flex; /* Align buttons in a row */
+      flex-direction: row; /* Ensure buttons are arranged horizontally */
+      justify-content: center; /* Center the buttons horizontally */
+      align-items: center; /* Center the buttons vertically */
+      gap: 1px; /* Add spacing between buttons */
+      margin-top: 10px; /* Optional: Add some space above the button group */
+  }
+
+  .inputDesign {
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Adjust width based on your layout */
+    max-width: 500px; /* Optional: Limit the input's width */
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 20px; /* Position the ₱ inside the wrapper */
+    font-size: 16px;
+    color: #e7c665; /* Match your design theme */
+    pointer-events: none; /* Prevent clicking or selecting the symbol */
+    font-size: 37.5px;
+}
+
+.inputDesign {
+    width: 250px; /* Ensure the input takes available space */
+    padding-left: 170px; /* Create space for the ₱ symbol */
+    padding-right: 80px; /* Optional: Space on the right */
+    font-size: 16px;
+    margin-left: 10px;
+    color: #333;
+    border: 1px solid #e7c665;
+    border-radius: 5px;
+    height: 40px; /* Adjust height to your preference */
+    color: #e7c665;
+    font-size: 37px;
+    text-align: right;
+}
+
+.twozeroes {
+  position: absolute;
+  left: 430px; /* Position the ₱ inside the wrapper */
+  font-size: 16px;
+  bottom: 7px;
+  color: #e7c665; /* Match your design theme */
+  pointer-events: none; /* Prevent clicking or selecting the symbol */
+  font-size: 37.5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Hides the spinner in WebKit browsers */
+  margin: 0; /* Removes extra margin if any */
+}
+
+.paymentHeader {
+  font-size: 24.6px;
+  font-family: Montserrat;
+  position: relative;
+  margin-bottom: 5px;
+  top: 15px;
+  left: 10px;
+}
+
+.bgimg1 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: -50px;
+  top: 40px;
+  z-index: 200;
+
+}
+
+.bgimg2 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  left: 1000px;
+  top: 150px;
+
+}
   /*******************************************/ 
