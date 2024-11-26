@@ -1,0 +1,25 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5px;
+}
+
+#amount {
+  width: 80%;
+  max-width: 400px;
+  height: 45px;
+  text-align: center;
+}
+
+#paypal-button-container {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#errorMSG {
+  color: red;
+}
