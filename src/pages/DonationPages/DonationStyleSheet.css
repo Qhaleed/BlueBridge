@@ -1,4 +1,4 @@
-body {
+ body {
   background-color: aquamarine;
 }
 
@@ -169,7 +169,7 @@ body {
   color: #e1a736;
 }
 
-/**************************************************/
+v
 
 /* Card Creation Modal */
 .events-list {
@@ -184,10 +184,10 @@ body {
 }
 
 .event-card {
-  width: 100%;
+  width: 90%;
   height: 100vh;
   padding: 5%;
-  background-color:yellow;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,12 +225,31 @@ body {
 }
 
 .event-card .content-Container-Modal p {
-  font-size: 10px;
+  text-align: left;
   color: black;
+  font-size: 0.9rem;
 }
 
 .content-Container-Modal h3 {
   color: #132753;
   text-align: left;
   font-size: 2.5rem;
+}
+
+.border {
+  width: 100%;
+}
+
+/**************************************************/
+
+.buttonCreate {
+  background-color: white;
+  border: 1px black solid;
+  color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
