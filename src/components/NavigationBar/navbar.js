@@ -11,7 +11,6 @@ function MyNavbar() {
                     <li>  <Link to="/"> Home </Link> </li>
                     <li> <Link to="/page2"> Donation </Link> </li>
                     <li> <Link to="/page3">  Volunteers </Link> </li>
-                    <li><a href="#goods" onClick={(e) => handleScroll(e, "goods")}>Goods</a></li>
                 </ul>
 
                 <input placeholder="Looking for something?"></input>
